@@ -1,5 +1,5 @@
 ---
-title:  "cuda 환경 설정"
+title:  "cuda 환경설정"
 date:   2024-06-13 10:04:23
 categories: [cuda]
 tags: [cuda]
