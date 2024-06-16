@@ -1,6 +1,6 @@
 # Site settings
 title: SD-brain
-description: 'SD-brain'
+description: 'SD-brain\ntest'
 url: 'https://supernoobchallenge.github.io/'
 baseurl: '/jekyll-uno'
 # google_analytics: 'UA-XXXXXX-X'

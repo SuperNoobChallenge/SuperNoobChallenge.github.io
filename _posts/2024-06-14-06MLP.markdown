@@ -1,5 +1,5 @@
 ---
-title:  "퍼셉트론"
+title:  "Multilayer perceptron(MLP)"
 date:   2024-06-13 10:04:23
 categories: [인공지능]
 tags: [인공지능]

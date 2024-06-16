@@ -1,8 +1,8 @@
 ---
-title:  "퍼셉트론"
+title:  "활성화 함수"
 date:   2024-06-13 10:04:23
-categories: [인공지능]
-tags: [인공지능]
+categories: [하미퍼파라미터]
+tags: [하미퍼파라미터]
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve --watch`, which launches a web server and auto-regenerates your site when a file is updated.
 
