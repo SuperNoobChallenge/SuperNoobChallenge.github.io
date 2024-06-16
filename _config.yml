@@ -1,6 +1,6 @@
 # Site settings
 title: SD-brain
-description: 'SD-brain\ntest'
+description: 'SD-brain<p>조각만한 두뇌를 위한 sd 카드'
 url: 'https://supernoobchallenge.github.io/'
 baseurl: '/jekyll-uno'
 # google_analytics: 'UA-XXXXXX-X'
