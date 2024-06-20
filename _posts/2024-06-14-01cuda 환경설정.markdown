@@ -1,12 +1,11 @@
 ---
-title:  "torch, tensorflow gpu 설치 전 준비"
+title:  "torch gpu(CUDA) 설치"
 date:   2024-06-13 10:04:23
 categories: [CUDA, CUDA GPU 설치]
 tags: [CUDA, CUDA GPU 설치]
 ---
-### 이 글은 Windows 11 환경에서 실험, 작성되었기 때문에 다른 환경에 적용할 때는 문제가 발생할 수 있다. 
+##### 이 글은 Windows 11 환경에서 실험, 작성되었기 때문에 다른 환경에 적용할 때는 문제가 발생할 수 있다.
 <br/>
-
 인공지능을 처음 공부하는 학생들이 가장 먼저 마주하는 난관 중 하나는 CUDA를 올바르게 설치하고 실행하는 것이다. CUDA(Compute Unified Device Architecture)는 NVIDIA가 개발한 병렬 컴퓨팅 플랫폼 및 프로그래밍 모델로, 개발자들이 GPU를 사용해 병렬 처리가 필요한 연산을 빠르게 처리할 수 있도록 돕는다. 딥 러닝과 같은 인공지능 기법은 이러한 CUDA의 활용 예시 중 하나로, [CUDA를 사용한 연산과 사용하지 않은 연산의 속도는 10배 이상 차이가 날 수 있다.](https://jaeyeoon.tistory.com/47){:target="_blank"}
 
 CUDA를 설치하는 데 있어 필요한 단계는 크게 3가지로 나누어진다.
@@ -14,12 +13,16 @@ CUDA를 설치하는 데 있어 필요한 단계는 크게 3가지로 나누어�
 2. 
 3. 
 
-사용 가능한 CUDA 버전 확인
+### 사용 가능한 CUDA 버전 확인  
+[https://developer.nvidia.com/cuda-gpus ](https://developer.nvidia.com/cuda-gpus ){:target="_blank"}해당 사이트로 들어가 사용할 수 있는 CUDA 버전을 확인한다.
 
-- ㅇㅇㅇ
+
+CUDA 드라이버 설치
+
+파이토치 설치
 
 
-섹스
+
 sssssssYou’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve --watch`, which launches a web server and auto-regenerates your site when a file is updated.
 
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
