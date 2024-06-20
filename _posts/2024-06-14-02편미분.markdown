@@ -4,11 +4,10 @@ date:   2024-06-13 10:04:23
 categories: [수학]
 tags: [수학]
 ---
-![이미지이름](/images/2024061403체인룰/1.png)
 편미분(Partial Derivative)은 다변수 함수의 각 변수에 대해 독립적으로 미분을 수행하는 것으로. 함수가 여러 개의 독립 변수에 따라 변할 때, 특정 변수 하나에 대해 함수의 변화율을 계산하는 방법이라 할 수 있다.  
 
 다변수 함수에서 관심이 있는 한 변수만 변수로 생각하고, 나머지 변수들은 상수로 취급한 뒤 미분하는 방법이다.
-![이미지이름](/images/2024061403체인룰/1.png)
+![이미지이름]({{ site.baseurl }}/images/2024061403체인룰/1.png)
 
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve --watch`, which launches a web server and auto-regenerates your site when a file is updated.
