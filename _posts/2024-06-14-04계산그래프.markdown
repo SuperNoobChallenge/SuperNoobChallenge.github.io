@@ -22,4 +22,4 @@ tags: [수학]
 
 아래 그림은 y = f(x) 의 역전파를 그림으로 나타낸 것이다.  
 
-<p align="center"><img src="{{ site.baseurl }}/images/2024/04계산그래프/3.png" onerror="this.src='{{ site.baseurl }}/images/404img.jpg';"></p>  
+<p align="center"><img src="{{ site.baseurl }}/images/2024/04계산그래프/3.png" onerror="this.src='{{ site.baseurl }}/images/404img.jpg';" width="200px"></p>  

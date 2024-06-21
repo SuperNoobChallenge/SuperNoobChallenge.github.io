@@ -19,8 +19,8 @@ tags: [인공지능]
 퍼셉트론의 구조는 입력층과 출력층이라는 2개의 층으로 구성되는 단순한 구조로 이루어진다.  
 아래 그림은 입력으로 2개의 신호를 받은 퍼셉트론의 예입니다. x1, x2는 입력 신호, y는 출력신호, w1, w2는 가중치 weight를 뜻한다. 원은 뉴런 혹은 노드라고 부른다.
 
-<p align="center"><img src="{{ site.baseurl }}/images/2024/05퍼셉트론/2.png" onerror="this.src='{{ site.baseurl }}/images/404img.jpg';"></p>  
+<p align="center"><img src="{{ site.baseurl }}/images/2024/05퍼셉트론/2.png" onerror="this.src='{{ site.baseurl }}/images/404img.jpg';" width="200px"></p>  
 
 2개 입력에 대한 퍼셉트론은 다음과 같은 수식으로 나타낼 수 있다.  
 
-<p align="center"><img src="{{ site.baseurl }}/images/2024/05퍼셉트론/3.png" onerror="this.src='{{ site.baseurl }}/images/404img.jpg';"></p> 
+<p align="center"><img src="{{ site.baseurl }}/images/2024/05퍼셉트론/3.png" onerror="this.src='{{ site.baseurl }}/images/404img.jpg';" width="300px"></p> 
