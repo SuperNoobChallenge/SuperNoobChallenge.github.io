@@ -1,29 +1,57 @@
 ---
 layout: default
 ---
-<h2>Tags:</h2>
-<div class="tags"> 
-{% for tagitem in site.tags  %} 
-  <a href="#{{ tagitem[0] }}">{{  tagitem[0] }}</a>
-{% endfor %}
-</div>
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    overflow-y: hidden; /* Prevents the body from scrolling */
+  }
+  section {
+    height: 100vh;
+    overflow-y: auto; /* Allows scrolling within each section */
+  }
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .tags a {
+    margin-right: 10px;
+  }
+</style>
 
-<!-- iterate through all tags on the site --> 
-{% for tagitem in site.tags %} 
-  <!-- for each tag, create an anchor by using the tag name as an id --> 
-  <div id="{{ tagitem[0] }}">  
-    <h3> {{ tagitem[0] }} </h3>  <!-- for create a heading --> 
+<script>
+  document.addEventListener('wheel', function(event) {
+    if (!event.target.closest('section')) {
+      event.preventDefault();
+    }
+  }, { passive: false });
+</script>
 
+<!-- iterate through all tags on the site -->
+{% for tagitem in site.tags %}
+<!-- for each tag, create an anchor by using the tag name as an id -->
+<section id="{{ tagitem[0] }}">
+  <h2>Tags:</h2>
+  <div class="tags">
+    {% for tagitem in site.tags %}
+    <a href="#{{ tagitem[0] }}">{{ tagitem[0] }}</a>
+    {% endfor %}
+  </div>
+  <div id="{{ tagitem[0] }}">
+    <h3>{{ tagitem[0] }}</h3> <!-- create a heading -->
     <ul> <!-- create the list of posts -->
-      <!-- iterate through all the posts on the site --> 
-      {% for post in site.posts %} 
-        <!-- list only those which contain the current tag --> 
-        {% if post.tags contains tagitem[0] %} 
-            <li>
-              <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </li>
-        {% endif %}
+      <!-- iterate through all the posts on the site -->
+      {% for post in site.posts %}
+      <!-- list only those which contain the current tag -->
+      {% if post.tags contains tagitem[0] %}
+      <li>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+      {% endif %}
       {% endfor %}
     </ul>
   </div>
+</section>
 {% endfor %}
