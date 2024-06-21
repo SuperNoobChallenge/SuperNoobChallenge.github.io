@@ -1,8 +1,8 @@
 ---
 title:  "torch gpu(CUDA) 설치"
 date:   2024-06-13 10:04:23
-categories: [CUDA, CUDA GPU 설치]
-tags: [CUDA, CUDA GPU 설치]
+categories: [설치]
+tags: [설치]
 ---
 ##### 이 글은 Windows 11 환경에서 실험, 작성되었기 때문에 다른 환경에 적용할 때는 문제가 발생할 수 있다.
 <br/>

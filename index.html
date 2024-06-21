@@ -9,7 +9,7 @@ robots: noindex
 
   .card {
     transition: 0.5s;
-    cursor: pointer; /* 마우스 커서를 포인터로 변경 */
+    cursor: pointer;
   }
 
   .card:hover {
@@ -44,7 +44,7 @@ robots: noindex
     {% for post in paginator.posts %}
     <li>
       <div class="list" data-aos="fade-up">
-        <div class="card" onclick="location.href='{{ site.baseurl }}{{ post.url }}'"> <!-- 클릭 이벤트 추가 -->
+        <div class="card" onclick="location.href='{{ site.baseurl }}{{ post.url }}'">
           <h2 class="post-list__post-title post-title">
             <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
           </h2>
@@ -53,7 +53,7 @@ robots: noindex
               <p class="excerpt" id="excerpt-{{ forloop.index }}">{{ post.excerpt | strip_html }}</p>
             </div>
             <div class="right">
-              <img src="{{ site.baseurl }}/images/{{post.id}}/title.png" alt="{{ post.id }}">
+              <img src="{{ site.baseurl }}/images/{{post.id}}/title.png" onerror="this.style.display='none';">
             </div>
           </div>
         </div>
@@ -81,7 +81,7 @@ robots: noindex
   AOS.init();
   document.addEventListener('DOMContentLoaded', function () {
     const excerpts = document.querySelectorAll('.excerpt p.excerpt');
-    const maxLength = 150; // 최대 글자 수 설정
+    const maxLength = 150;
 
     excerpts.forEach(function (excerpt) {
       if (excerpt.textContent.length > maxLength) {
